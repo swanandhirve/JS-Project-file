@@ -1,0 +1,160 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0.5px 4px 8px black;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.form {
+  align-items: center;
+  display: flexbox;
+  justify-content: center;
+  margin: 15px;
+  font-family: 'Poppins';
+  background-color: rgb(241, 241, 241);
+}
+
+.form-control {
+  display: flexbox;
+}
+
+.add-new {
+  color: black;
+  width: 60vw; /* Responsive width */
+  max-width: 400px; /* Maximum width */
+  height: 2rem; /* Appropriate height for the input field */
+  padding-left: 1%; /* Padding for left side */
+  padding-right: 1%; /* Padding for right side for balance */
+  font-size: 1.2rem; /* Font size for readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.add-new:hover {
+  cursor: pointer;
+  transform: scale(1.005); /* Slightly enlarges on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+input,
+.add,
+.clear-btn {
+  padding: 0.8rem 1.2rem; /* Adequate padding for the button */
+  font-size: 1.2rem; /* Match the font size of input */
+  line-height: 1.5; /* Line height for consistency */
+  border: none; /* Remove default button border */
+  border-radius: 10px; /* Same border radius for consistency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+  transition: 0.2 ease;
+}
+
+.add-new:focus,
+.add:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+.filter {
+  width: 60vw;
+  max-width: 400px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.filter.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.filter.visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease; /* Smooth visibility transition */
+}
+
+.filter:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 1px 5px rgba(0, 123, 255, 0.5);
+}
+.text-magenta {
+  color: rgb(234, 17, 17);
+}
+
+.todo-list {
+  width: 40vw;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0;
+  text-align: center;
+}
+
+#item-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 100%; /* Ensure it takes the full width of the container */
+  max-width: 400px; /* Optional: limit the width of each item */
+}
+
+.todo-item:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-5px);
+}
+
+.btn-link {
+  font-size: 16px;
+  background-color: transparent; /* Keep background transparent */
+  color: rgb(234, 17, 17); /* Make it red, same as the icon color */
+  border: none;
+  padding: 0; /* Remove default padding */
+  cursor: pointer;
+  display: inline-flex; /* Align items inside the button */
+  align-items: center; /* Vertically center the icon */
+  margin-left: 10px;
+}
+
+.btn-link i {
+  font-size: 18px; /* Adjust the size of the icon */
+  margin-left: 5px; /* Space between the trash text and the icon */
+}
+
+.btn-link:hover {
+  color: #d11a2a; /* Darken red when hovering */
+}

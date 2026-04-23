@@ -1,0 +1,128 @@
+* {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ec6e1a;
+}
+
+button {
+  background-color: #d4531f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #c4410a;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.salary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.salary-conatiner input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.expense-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.expenses-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 10px;
+  border: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+.divisional-budget {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.budget-section {
+  margin-bottom: 20px;
+}
+
+.budget-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.budget-section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.reamining-budget {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.reamining-budget .h3 {
+  color: #28a745;
+}
+
+.reamining-budget .p {
+  color: #28a745;
+}

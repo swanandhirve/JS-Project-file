@@ -9,12 +9,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "electron": "^41.5.1",
     "express": "^5.2.1",
     "fetch": "^1.1.0",
     "fs": "^0.0.1-security",
-    "node": "^24.15.0"
+    "node": "^24.15.0",
+    "require": "^2.4.20",
+    "tabulator": "^0.2.40",
+    "uuidv4": "^6.2.13"
   }
 }

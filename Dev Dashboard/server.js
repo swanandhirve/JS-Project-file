@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 const routes = require('./routes/api');
+const path = require('path');
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'frontEnd')));
 
 const PORT = process.env.PORT || 3000;
 
@@ -32,7 +34,7 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Dev Dashboard API!');
+  res.sendFile(__dirname + '/frontEnd/dashboard.html');
 });
 
 app.listen(PORT, () => {

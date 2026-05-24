@@ -92,3 +92,33 @@ body {
   height: 95%;
   background-color: #1a19196f;
 }
+
+.tabulator .tabulator-header {
+  background-color: #1a19196f !important;
+  color: #ffffffc6;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  background-color: #1a19196f !important;
+  color: #ffffffc6;
+  font-weight: bold;
+}
+
+.tabulator {
+  background-color: #1a19196f !important;
+  color: #ffffffc6;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.tabulator .tabulator-row {
+  background-color: #1a19196f !important;
+  color: #ffffffc6;
+}
+
+.tabulator .tabulator-tableholder .tabulator-table {
+  background-color: #1a19196f !important;
+  color: #ffffffc6;
+  border: none !important;
+  border-radius: 10px !important;
+}

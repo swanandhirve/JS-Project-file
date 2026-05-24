@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Dashboard</title>
   <link rel="stylesheet" href="main.css">
+  <link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,10 @@
     <textarea id="quick-notes" placeholder="Write your notes here..."></textarea>
   </div>
 
-  <script src="dashboard.js"></script>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="dashboard.js"></script>
+  <script src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
 </body>
 
 </html>

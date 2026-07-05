@@ -37,6 +37,8 @@ export class Dashboard {
         { title: 'Id', field: 'id' },
         { title: 'Repository', field: 'repoName' },
         { title: 'Repository Commits', field: 'commits' },
+        { title: 'Repository udpated at', field: 'date' },
+        { title: 'Description', field: 'description' },
       ];
 
       let gridOptions = {
@@ -51,13 +53,15 @@ export class Dashboard {
       };
 
       let table = new Tabulator('#repo-list', {
-        data: [data.data],
-        height: '100%', // ✅ directly here
-        layout: 'fitColumns', // ✅ directly here
+        data: data, //  directly here
+        height: '100%', //  directly here
+        layout: 'fitColumns', //  directly here
         columns: [
           { title: 'Id', field: 'id', visible: false },
           { title: 'Repository', field: 'repoName' },
           { title: 'Repository Commits', field: 'commits' },
+          { title: 'Repository modified on', field: 'date' },
+          { title: 'Description', field: 'description' },
         ],
       });
       // table.appendTo('repo-list');
@@ -69,7 +73,7 @@ export class Dashboard {
     if (res.ok) {
       let data = await res.json();
       console.log('Data from API:', data);
-      return data;
+      return data.data;
     } else {
       console.error('Failed to fetch data from API:', res.statusText);
     }

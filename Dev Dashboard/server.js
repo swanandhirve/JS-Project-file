@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const routes = require('./routes/api');
 const path = require('path');
+require('dotenv').config({ path: './.env' });
 
 app.use(express.json());
+
+// This is a simple way to serve static files from the 'frontEnd' directory.
 app.use(express.static(path.join(__dirname, 'frontEnd')));
 
 const PORT = process.env.PORT || 3000;
@@ -40,3 +43,10 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// app.use('/api/data', './routes/api');
+const getToken = () => {
+  const token = process.env.GITHUB_TOKEN;
+
+  return token;
+};

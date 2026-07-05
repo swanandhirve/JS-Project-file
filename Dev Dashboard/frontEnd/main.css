@@ -16,10 +16,11 @@ body {
 }
 
 .dashboard-container {
-  border: 1px solid #ffffffc6;
-  border-radius: 10px;
+  /* border: 1px solid #ffffffc6;
+  border-radius: 10px; */
+  border: none;
   background-color: #1a19196f;
-  border-style: inset;
+  /* border-style: inset; */
 }
 
 .dashboard-container {
@@ -72,8 +73,10 @@ body {
 .task-list {
   list-style: none;
   width: 80%;
-  height: 95%;
+  height: 100%;
   color: #ffffffc6;
+  border: 1px solid #ffffffc6;
+  border-radius: 10px;
 }
 
 .task-list h2 {
@@ -119,6 +122,6 @@ body {
 .tabulator .tabulator-tableholder .tabulator-table {
   background-color: #1a19196f !important;
   color: #ffffffc6;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 10px !important;
 }

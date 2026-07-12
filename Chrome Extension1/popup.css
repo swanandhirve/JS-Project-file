@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  background-color: #141515ec;
+  color: #fff;
+}
+
+.note-container textarea {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #2a2a2a;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 100%;
+  width: 72%;
+}
+
+.note-container button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-top: 12px;
+}
+
+.clear-button i {
+  margin-right: 0.5rem;
+  /* width: 12px;
+  height: 12px; */
+}
+
+.fa-eraser:before,
+.fa-floppy-disk:before {
+  zoom: 0.8;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100; */
+  /* margin-top: 1rem; */
+  height: 60px;
+}
+
+.buttons-div {
+  width: 72%;
+  display: flex;
+  justify-content: flex-end;
+}

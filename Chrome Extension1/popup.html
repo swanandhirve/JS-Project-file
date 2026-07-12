@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Save notes</title>
+</head>
+
+<body>
+    <!-- <h1>Save notes</h1> -->
+
+    <!-- <div class=" container">
+    <div class="upload-or-drag">
+        <p>Upload a excel, csv, ppt, image file or drag and drop it here</p>
+
+    </div>
+
+    <button id="convertButton">Convert to PDF</button>
+    </div> -->
+
+    <!-- <div class="download-container">
+        <p>Download your converted PDF</p>
+        <button id="downloadButton">
+            <a href="#" download>Download PDF</a>
+        </button>
+    </div> -->
+
+    <div class="note-container">
+        <div class="buttons-div">
+            <div class="button-container">
+                <button class="clear-button flex-center" id="clearButton">
+                    <i class="fa-solid fa-eraser"></i>
+                </button>
+                <button class="save-button flex-center" id="saveButton">
+                    <i class="fa-regular fa-floppy-disk"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="noteInput" id="noteInput"
+        style="height: 100%; width: 100%;
+        font-size: 1.2rem; margin-bottom: 1rem;
+        display: flex; align-items: center;
+        justify-content: center;">
+            <!-- <textarea id="noteInput" placeholder="Write your notes here..."></textarea> -->
+        </div>
+    </div>
+
+    <script type="module" src="./popup.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Save Notes",
+  "version": "1.0",
+  "description": "A simple Chrome extension to save notes.",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save Notes"
+  }
+}
